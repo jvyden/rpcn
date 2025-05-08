@@ -11,7 +11,7 @@ jobs:
     - name: Download musl
       run: rustup component add rust-std-x86_64-unknown-linux-musl
     - name: Build
-      run: cargo build --release --verbose --target x86_64-unkonwn-linux-musl
+      run: cargo build --release --verbose --target x86_64-unknown-linux-musl
     - name: Run tests
       run: cargo test --release --verbose --target x86_64-unknown-linux-musl
     - run: mkdir artifact
