@@ -16,7 +16,7 @@ jobs:
     - name: Build
       run: cargo zigbuild --release --verbose --target x86_64-unknown-linux-gnu.2.36
     - run: mkdir artifact
-    - run: cp target/release/rpcn artifact/rpcn
+    - run: cp target/x86_64-unknown-linux-gnu/release/rpcn artifact/rpcn
     - run: cp rpcn.cfg artifact/rpcn.cfg
     - run: cp servers.cfg artifact/servers.cfg
     - run: cp server_redirs.cfg artifact/server_redirs.cfg
